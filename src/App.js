@@ -31,10 +31,10 @@ function Base() {
         </Container>
 
         <Container my="5">
-        <Container borderColor="gray.300" borderStyle="dashed" borderWidth="2px" rounded="md" shadow="sm" padding="5">
+        <Container position="relative" borderColor="gray.300" borderStyle="dashed" borderWidth="2px" rounded="md" shadow="sm" padding="5">
           <Heading fontSize="lg" color="gray.700" fontWeight="bold">Drop Image Here</Heading>
           <Text fontWeight="light">or click to upload</Text>
-          <Input type="file" height="100%" width="100%" top="0" left="0" opacity="0" aria-hidden="true" accept="image/*" />
+          <Input type="file" height="100%" position="absolute" opacity="0" width="100%" top="0" left="0" zIndex={2} aria-hidden="true" accept="image/*" />
         </Container>
         </Container>
 
